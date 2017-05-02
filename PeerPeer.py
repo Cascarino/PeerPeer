@@ -37,19 +37,18 @@ print(qnams)
 
 
 
-def checkinput(): # check whether input is a number and whether it is in the list of options
-	while True:
-		try:
-			qnam = int(input("Which question?\n"))
-			if True:
-				if qnam not in qnams:
-					print("This question is not in the list.")
-				else:
-					print(qnams[int(qnam)]) 
-					break
-		except:
-			print("This is not a number.")
-			continue
+def checkinput():"""check whether input is a number and whether it is in the list of options"""
+while True:
+	try:
+		qnam = int(input("Which question?\n"))
+		if qnam not in qnams:
+			print("This question is not in the list.")
+		else:
+			print(qnams[int(qnam)]) 
+			break
+	except:
+		print("This is not a number.")
+		continue
 
 checkinput()
 
